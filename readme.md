@@ -12,7 +12,28 @@ npm install mocha -g
 ```
 
 # 配置api
-按照[apilist.json](apilist.json)中的格式配置好api。
+按照[apilist.json](apilist.json)中的格式配置好api。  
+配置示例：
+```json
+{
+  "/helloworld": {
+    "cmd": "node",
+    "file": "api/helloworld.js"
+  },
+  "/mocha": {
+    "cmd": "mocha",
+    "file": "test"
+  },
+  "/test/mocha/helloworld": {
+    "cmd": "mocha",
+    "file": "test/helloworld.spec.js"
+  },
+  "/test/python/helloworld": {
+    "cmd": "python",
+    "file": "test/test_helloworld.py"
+  }
+}
+```
 
 # 脚本参数化
 通过process.env.CONSOLE_LOG_API_CONTEXT在http请求、主线程、子线程之间进行参数传递。http请求的querystring参数req会被转换为线程线程变量子线程的环境变量CONSOLE_LOG_API_CONTEXT传给子线程。
