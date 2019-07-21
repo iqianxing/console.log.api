@@ -22,7 +22,12 @@ req.query['req'] == process.env.CONSOLE_LOG_API_CONTEXT
 在api中获取环境变量：  
 ```
 var context = process.env.CONSOLE_LOG_API_CONTEXT;
-```
+```  
+示例：
+1. [node context](api/context.js)
+2. [mocha context](test/context.spec.js)
+3. [python context](test/test_context.py)
+
 
 # 效果
 <p align="center"><br><img alt="运行效果" src="public/console.log.api.gif" width="354"></p>
