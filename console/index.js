@@ -35,7 +35,7 @@ function log(opts, res) {
     args[0] = "/c";
   }
   if (opts.file) {
-    args[1] = args[1] + ' ' + opts.file;
+    args[1] = args[1] + ' ' + path.resolve(opts.file);
   }
   var env = JSON.parse(JSON.stringify(process.env));
   if (opts.CONSOLE_LOG_API_CONTEXT) {
