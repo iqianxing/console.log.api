@@ -33,14 +33,14 @@
   },
   "/test/python/helloworld": {
     "cmd": "python",
-    "file": "test\\test_helloworld.py"
+    "file": "test/test_helloworld.py"
   },
   "/test/python/jsondiff": {
     "cmd": "python",
-    "file": "test\\test_jsondiff.py"
+    "file": "test/test_jsondiff.py"
   },
   "/test/python/context": {
     "cmd": "python",
-    "file": "test\\test_context.py"
+    "file": "test/test_context.py"
   }
 }
