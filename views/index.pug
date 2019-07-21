@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to  #{title}
+  h3 Api list
+
+  ul
+    each val in apis
+      li
+        a(href=val)=val
+    li
+      a(href="/api/context?req=developer") node: hello, developer
+    li
+      a(href="/api/context?req=tester") node: hello, tester
+    li
+      a(href="/api/test/mocha/context?req={\"name\":\"world\"}") mocha: name equals world
+    li
+      a(href="/api/test/mocha/context?req={\"name\":\"foobar\"}") mocha: name equals foobar
+    li
+      a(href="/api/test/python/context?req={\"name\":\"world\"}") python: name equals world
+    li
+      a(href="/api/test/python/context?req={\"name\":\"foobar\"}") python: name equals foobar

@@ -1,0 +1,46 @@
+{
+  "/helloworld": {
+    "cmd": "node",
+    "file": "api/helloworld.js"
+  },
+  "/huawei": {
+    "cmd": "node",
+    "file": "api/huawei.js"
+  },
+  "/json": {
+    "cmd": "node",
+    "file": "api/json.js"
+  },
+  "/context": {
+    "cmd": "node",
+    "file": "api/context.js"
+  },
+  "/mocha": {
+    "cmd": "mocha",
+    "file": "test"
+  },
+  "/test/mocha/helloworld": {
+    "cmd": "mocha",
+    "file": "test/helloworld.spec.js"
+  },
+  "/test/mocha/jsondiff": {
+    "cmd": "mocha",
+    "file": "test/jsondiff.spec.js"
+  },
+  "/test/mocha/context": {
+    "cmd": "mocha",
+    "file": "test/context.spec.js"
+  },
+  "/test/python/helloworld": {
+    "cmd": "python",
+    "file": "test\\test_helloworld.py"
+  },
+  "/test/python/jsondiff": {
+    "cmd": "python",
+    "file": "test\\test_jsondiff.py"
+  },
+  "/test/python/context": {
+    "cmd": "python",
+    "file": "test\\test_context.py"
+  }
+}
